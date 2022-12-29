@@ -1,0 +1,14 @@
+---
+- name: Install Node.js on Ubuntu
+  hosts: all
+  become: true
+  tasks:
+    - name: Add Node.js repository
+      apt_repository:
+        repo: deb https://deb.nodesource.com/node_14.x focal main
+        state: present
+    - name: Install Node.js
+      apt:
+        name: nodejs
+        state: latest
+

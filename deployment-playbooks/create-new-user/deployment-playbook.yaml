@@ -1,0 +1,16 @@
+---
+- name: Create new user and add to sudo group
+  hosts: all
+  become: true
+  tasks:
+    - name: Create new user
+      user:
+        name: newuser
+        password: "$6$rounds=656000$salt$hash"
+        state: present
+    - name: Add new user to sudo group
+      user:
+        name: newuser
+        groups: sudo
+        append: yes
+
