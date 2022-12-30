@@ -16,6 +16,15 @@ Ansible is an open-source automation platform that is used to automate the deplo
 
 1. **Ansible Hosts**: Ansible hosts field specifies the target systems that the playbook will be executed on. The hosts field can contain a list of hostnames or IP addresses, as well as group names and variables that can be used to classify and identify the systems.
 
-Example:
-```
-```
+
+**Here are some advanced concepts of Ansible**
+
+**Ansible Galaxy**: Ansible Galaxy is a public repository of ansible roles, allowing you to search for, download, and use roles created by the community. You can use Galaxy to find roles for common tasks, such as installing a database or setting up a load balancer, and reuse them in your own playbooks.
+
+**Dynamic inventory**: Ansible can use external scripts or APIs to dynamically generate inventory, allowing you to manage hosts that are not known in advance or that may change over time. This can be useful for managing cloud resources or for managing a large number of hosts that are added or removed frequently.
+
+**Ansible Tower**: Ansible Tower is a commercial product that provides a web-based interface and API for managing ansible playbooks. Tower includes features such as job scheduling, role-based access control, and real-time job output, which can be useful for larger teams or for managing complex automation pipelines.
+
+**Ansible Vault**: Ansible Vault is a feature that allows you to store sensitive data, such as passwords or secrets, in encrypted files. Vault can be used to protect sensitive data in your playbooks and prevent it from being checked into version control.
+
+**Ansible Modules for Networking**: Ansible includes a number of modules specifically designed for managing networking devices, such as routers, switches, and firewalls. These modules allow you to automate tasks such as configuring VLANs, creating firewall rules, or generating network diagrams.
